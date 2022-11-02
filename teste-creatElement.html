@@ -1,0 +1,34 @@
+<div id="main">
+    
+        <button id="btn">Click me</button>
+    </div>
+    
+    <script>
+    
+    
+    var btn  = document.getElementById("btn").addEventListener("click",function(){
+    
+        //criando um novo elemento "p"
+        var newText = document.createElement("p");
+    
+        //inserindo texto no elemento p
+        newText.innerHTML = "We can do it!"
+    
+        //obtendo a div onde o elemento será inserido
+        var currentDiv = document.getElementById("main");
+    
+        //inserindo o novo elemento dentro da div
+        document.body.appendChild(newText, currentDiv);
+    
+    })
+
+    // //Creating a text node
+    // var newContent = doument.createTextNode(¨Como você está?¨);
+
+    // //Adding the textp node to the newly created div
+    // nreDiv.appendChild(newContent);
+
+    // //Adding the newly created element and its content into the DOM
+    // var currentDiv = document.getElementById("main");
+    // document.body.appendChild(newDiv, currentDiv);
+    </script>
